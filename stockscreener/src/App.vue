@@ -10,7 +10,7 @@
         <div v-for="item in items" :key="item">{{ item }}</div>
       </div>
     </div>
-    <div class="footer">Horizontal List</div>
+    <HozList />
   </div>
 </template>
 
@@ -18,6 +18,7 @@
 import Header from "./components/Header.vue";
 import Chart from "./components/Chart.vue";
 import Item from "./components/VerticalList.vue";
+import HozList from "./components/HorizontalList.vue";
 import { getData } from "./data.js";
 
 export default {
@@ -31,6 +32,7 @@ export default {
   components: {
     Header,
     Chart,
+    HozList,
   },
 };
 </script>
